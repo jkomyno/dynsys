@@ -95,6 +95,5 @@
     <orderEntry type="library" exported="" name="support-v4-21.0.3" level="project" />
     <orderEntry type="library" exported="" name="androidplot-core-0.6.1" level="project" />
     <orderEntry type="library" exported="" name="exp4j-0.4.5" level="project" />
-    <orderEntry type="library" exported="" name="1_exp4j-0.4.5" level="project" />
   </component>
 </module>

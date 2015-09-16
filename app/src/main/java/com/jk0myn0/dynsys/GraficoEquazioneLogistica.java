@@ -53,11 +53,11 @@ public class GraficoEquazioneLogistica extends Activity {
 
         double funzione;
         int arrayIndex = 0;
-        for (double x = xStart; x <= xEnd; x += inc) {
+        for (double x = xStart; x < xEnd; x += inc) {
             funzione = eq_log(x, r);
             valuesX[arrayIndex] = x;
             valuesY[arrayIndex] = funzione;
-            arrayIndex++;
+            if (arrayIndex < (nIterations - 1)) arrayIndex++;
         }
 
         // equazione logistica
@@ -65,7 +65,7 @@ public class GraficoEquazioneLogistica extends Activity {
         int nIterations2;
 
         if (precision2 == 0) nIterations2 = 1;
-        else nIterations2 = (precision2 * 10) + 1;
+        else nIterations2 = (precision2 * 10);
 
         Number[] valuesX0 = new Number[nIterations2];
         Number[] valuesY0 = new Number[nIterations2];
