@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff51b46d"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SapoMainActivity">
+
+    <TextView
+        android:id="@+id/Testo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Inserisci la funzione"
+        android:textColor="#e6ffffff"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/funzioneTxt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Testo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:hint="f(x)"
+        android:maxLength="30"
+        android:textColor="#ffffffff"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/bottoneDiCalcolo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#e0e0e0"
+        android:paddingEnd="1dp"
+        android:paddingStart="0dp"
+        android:text="Calculate"
+        android:textColor="#09089a"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:text="Inserisci il valore di x"
+        android:textColor="#e6ffffff"
+        android:textSize="24dp"
+        android:layout_below="@+id/funzioneTxt"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/xFunzioneTxt"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="x"
+        android:inputType="numberDecimal"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xFunzioneTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:text="Numero iterazioni da mostrare"
+        android:textColor="#e6ffffff"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/nIterationsTxt"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="50"
+        android:inputType="number"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nIterationsTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:text="Inserisci il range [0 - ?]"
+        android:textColor="#e6ffffff"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/endRangeTxt"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView14"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="1"
+        android:inputType="numberSigned"
+        android:textSize="30dp" />
+
+</RelativeLayout>

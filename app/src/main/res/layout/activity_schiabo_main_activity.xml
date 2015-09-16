@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cd010101"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_x0"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toStartOf="@+id/btn_calc"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:backgroundTint="#047fff"
+        android:textColor="#878787" />
+
+    <EditText
+        android:id="@+id/txt_r"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/btn_calc"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:backgroundTint="#047fff"
+        android:textColor="#878787" />
+
+    <EditText
+        android:id="@+id/txt_xStart"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_x0"
+        android:layout_marginTop="30dp"
+        android:layout_toStartOf="@+id/btn_calc"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:backgroundTint="#047fff"
+        android:textColor="#878787" />
+
+    <EditText
+        android:id="@+id/txt_xEnd"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_r"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/btn_calc"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:backgroundTint="#047fff"
+        android:textColor="#878787" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_xEnd"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Parabola&apos;s Precision"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="22dp"
+        android:textColor="#d8d8d8" />
+
+    <Button
+        android:id="@+id/btn_calc"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Calculate" />
+
+    <SeekBar
+        android:id="@+id/seekBar_precision"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:indeterminate="false"
+        android:splitTrack="false"
+        android:textAlignment="center"
+        android:progressBackgroundTint="#047fff"
+        android:backgroundTint="#047fff" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txt_x0"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txt_x0"
+        android:gravity="center_horizontal"
+        android:text="x0"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="22dp"
+        android:textColor="#d8d8d8" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txt_r"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txt_r"
+        android:gravity="center_horizontal"
+        android:text="r"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="22dp"
+        android:textColor="#d8d8d8" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txt_x0"
+        android:layout_alignStart="@+id/txt_x0"
+        android:layout_below="@+id/txt_x0"
+        android:gravity="center_horizontal"
+        android:text="xStart"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="22dp"
+        android:textColor="#d8d8d8" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txt_r"
+        android:layout_alignStart="@+id/txt_r"
+        android:layout_below="@+id/txt_r"
+        android:gravity="center_horizontal"
+        android:text="xEnd"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="22dp"
+        android:textColor="#d8d8d8" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar_precision"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Line&apos;s Precision"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="22dp"
+        android:textColor="#d8d8d8" />
+
+    <SeekBar
+        android:id="@+id/seekBar_precision2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_margin="10dp"
+        android:indeterminate="false"
+        android:splitTrack="false"
+        android:textAlignment="center"
+        android:progressBackgroundTint="#047fff"
+        android:backgroundTint="#047fff" />
+
+</RelativeLayout>

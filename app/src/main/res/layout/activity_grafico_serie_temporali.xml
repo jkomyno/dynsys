@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jk0myn0.dynsys.GraficoSerieTemporali">
+
+    <com.androidplot.xy.XYPlot
+        android:id="@+id/serieTemporaliPlot"
+        androidPlot.domainLabel="Domain"
+        androidPlot.graphWidget.gridLinePaint.color="#000000"
+        androidPlot.legendWidget.heightMetric.value="25dp"
+        androidPlot.legendWidget.iconSizeMetrics.heightMetric.value="15dp"
+        androidPlot.legendWidget.iconSizeMetrics.widthMetric.value="15dp"
+        androidPlot.legendWidget.positionMetrics.anchor="right_bottom"
+        androidPlot.rangeLabel="Range"
+        androidPlot.title="Temporal Series XY Plot"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="false"
+        android:background="#41ff83" />
+
+</RelativeLayout>

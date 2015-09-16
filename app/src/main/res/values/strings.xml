@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sistemi Dinamici</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_math__graph">Grafico Equazione Logistica - Schiabel</string>
+    <string name="title_activity_main">Sistemi Dinamici</string>
+    <string name="title_schiabo_activity_main">Equazione Logistica - Schiabel</string>
+    <string name="title_activity_owski_main">Serie Temporali - Bertocco</string>
+    <string name="title_activity_sapo_main">Elaborazione Funzioni - Simonella</string>
+    <string name="title_activity_grafico_serie_temporali">Grafico Serie Temporali - Bertocco</string>
+    <string name="title_activity_grafico_funzione">Grafico Funzione - Simonella</string>
+</resources>
