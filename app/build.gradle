@@ -24,4 +24,6 @@ dependencies {
     compile 'com.androidplot:androidplot-core:0.6.1'
     compile 'com.jjoe64:graphview:4.0.1'
     compile files('build/intermediates/libs/exp4j-0.4.5.jar')
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:design:22.2.0'
 }

@@ -1,47 +1,46 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#9effbf"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_height="fill_parent"
+    android:background="#d6d2f6"
     tools:context="com.jk0myn0.dynsys.MainActivity">
 
     <Button
         android:id="@+id/launchSapo"
         android:layout_width="fill_parent"
-        android:layout_height="165dp"
+        android:layout_height="175dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:background="#b44c80ff"
         android:text="Grafico Funzione"
         android:textColor="#e8f4f0"
         android:textSize="44dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/launchOwski"
         android:layout_width="fill_parent"
-        android:layout_height="165dp"
+        android:layout_height="175dp"
         android:layout_below="@+id/launchSapo"
         android:layout_centerHorizontal="true"
-        android:background="#c1ff634f"
+        android:background="#c1eb0802"
         android:text="Serie Temporali"
         android:textColor="#e8f4f0"
         android:textSize="44dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_weight="1"/>
 
     <Button
         android:id="@+id/launchSchiabo"
         android:layout_width="fill_parent"
-        android:layout_height="165dp"
+        android:layout_height="175dp"
         android:layout_below="@+id/launchOwski"
         android:layout_centerHorizontal="true"
-        android:background="#99ff65"
+        android:background="#26df49"
         android:text="Equazione Logistica"
         android:textColor="#e8f4f0"
         android:textSize="44dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_weight="1"/>
 </RelativeLayout>
